@@ -1,5 +1,7 @@
 package com.seoulconexh.kcy.seoul_traffic_info;
 
+import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -10,6 +12,15 @@ public class IntroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
 
-        // 다른 일때문에 여기까지
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(IntroActivity.this,MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        },2000);
+
     }
 }
