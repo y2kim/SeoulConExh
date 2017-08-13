@@ -23,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         typeMini = (AirQualityTypeMini) findViewById(R.id.type_mini);
+        subwayButtonTypeA = (TrafficSubwayButtonTypeA) findViewById(R.id.subway_type_a);
 
         typeMini.setOpenAPIKey(key);
+        subwayButtonTypeA.setOpenAPIKey(key);
     }
 }
