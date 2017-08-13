@@ -15,11 +15,15 @@ public class MainActivity extends AppCompatActivity {
     private TrafficBusButtonTypeN busTypeN;
     private TrafficSubwayButtonTypeA subwayButtonTypeA;
     private AirQualityTypeMini typeMini;
-// AAR 를 사용  
+// AAR 를 사용
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        typeMini = (AirQualityTypeMini) findViewById(R.id.type_mini);
+
+        typeMini.setOpenAPIKey(key);
     }
 }
