@@ -17,8 +17,14 @@
             android:id="@+id/subway_type_b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
            />
 
+        <kr.go.seoul.trafficbus.TrafficBusButtonTypeB
+            android:id="@+id/bus_type_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
     </LinearLayout>
 
     <kr.go.seoul.airquality.AirQualityTypeMini
