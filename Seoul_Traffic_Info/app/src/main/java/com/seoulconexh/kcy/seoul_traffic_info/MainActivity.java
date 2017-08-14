@@ -11,7 +11,7 @@ import kr.go.seoul.trafficsubway.TrafficSubwayButtonTypeB;
 public class MainActivity extends AppCompatActivity {
 
     private String key = "5a6c4f63676b636836384858566346";
-    private String subwayKey = "sample"; // 지하철 실시간 시간
+    private String subwayKey = "4971434c466b63683539686464636c"; // 지하철 실시간 시간
 
     private TrafficBusButtonTypeB busTypeB;
     private TrafficBusButtonTypeN busTypeN;
@@ -26,9 +26,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         typeMini = (AirQualityTypeMini) findViewById(R.id.type_mini);
-        subwayButtonTypeA = (TrafficSubwayButtonTypeA) findViewById(R.id.subway_type_a);
+
+        subwayButtonTypeB = (TrafficSubwayButtonTypeB) findViewById(R.id.subway_type_b);
 
         typeMini.setOpenAPIKey(key);
-        subwayButtonTypeA.setOpenAPIKey(key);
+        subwayButtonTypeB.setOpenAPIKey(key);
+        subwayButtonTypeB.setsubwayLocationAPIKey(subwayKey);
     }
 }
