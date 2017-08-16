@@ -13,4 +13,10 @@
         android:src="@drawable/in_my_seoul_logo"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="서울시"
+        />
+
 </LinearLayout>
