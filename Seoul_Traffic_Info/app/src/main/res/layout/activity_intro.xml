@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.seoulconexh.kcy.seoul_traffic_info.IntroActivity">
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="인트로"/>
+        android:src="@drawable/in_my_seoul_logo"
+        />
 
 </LinearLayout>
