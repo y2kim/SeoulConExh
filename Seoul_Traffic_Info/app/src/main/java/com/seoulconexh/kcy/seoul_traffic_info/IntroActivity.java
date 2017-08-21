@@ -22,5 +22,7 @@ public class IntroActivity extends AppCompatActivity {
             }
         },2000);
 
+
+        // 하단에 이미지 생각중 
     }
 }
