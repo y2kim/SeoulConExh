@@ -4,22 +4,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import java.net.URI;
-
-import kr.go.seoul.trafficbus.TrafficBusButtonTypeB;
-import kr.go.seoul.trafficbus.TrafficBusButtonTypeN;
 import kr.go.seoul.airquality.AirQualityTypeMini;
+import kr.go.seoul.culturalevents.CulturalEventButtonTypeA;
 import kr.go.seoul.trafficsubway.TrafficSubwayButtonTypeB;
 
 public class MainActivity extends AppCompatActivity {
 
     private String key = "5a6c4f63676b636836384858566346";
     private String subwayKey = "4971434c466b63683539686464636c"; // 지하철 실시간 시간
-    private String busKey = "IX%2BSJyAfWgiFyih3k9gnNxzfboqMwjqBWivbWiKPs%2BqQQfy01AtVbt4Nlo6jvdW5WWLzizYBdNQZgw%2FjIp38xQ%3D%3D";
     public URI uri;
 
-    private TrafficBusButtonTypeB busTypeB;
-    private TrafficBusButtonTypeN busTypeN;
+
     private TrafficSubwayButtonTypeB subwayButtonTypeB;
+    private CulturalEventButtonTypeA typeA;
     private AirQualityTypeMini typeMini;
 
     @Override
@@ -29,14 +26,13 @@ public class MainActivity extends AppCompatActivity {
 
         typeMini = (AirQualityTypeMini) findViewById(R.id.type_mini);
         subwayButtonTypeB = (TrafficSubwayButtonTypeB) findViewById(R.id.subway_type_b);
-        busTypeB = (TrafficBusButtonTypeB) findViewById(R.id.bus_type_b);
-        busTypeN = (TrafficBusButtonTypeN) findViewById(R.id.bus_type_n);
+        typeA = (CulturalEventButtonTypeA) findViewById(R.id.type_a);
+
 
         typeMini.setOpenAPIKey(key);
+        typeA.setOpenAPIKey(key);
         subwayButtonTypeB.setOpenAPIKey(key);
         subwayButtonTypeB.setsubwayLocationAPIKey(subwayKey); // 실시간 도착
-        busTypeB.setOpenAPIKey(busKey);
-        busTypeN.setOpenAPIKey(busKey);
 
 
     }

@@ -1,1 +1,1 @@
-include ':app', ':airquality-release', ':trafficbus-release', ':trafficsubway-release'
+include ':app', ':airquality-release', ':trafficsubway-release', ':culturalevents-release'

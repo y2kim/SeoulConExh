@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Seoul_Traffic_Info.iml" filepath="$PROJECT_DIR$/Seoul_Traffic_Info.iml" />
       <module fileurl="file://$PROJECT_DIR$/airquality-release/airquality-release.iml" filepath="$PROJECT_DIR$/airquality-release/airquality-release.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/trafficbus-release/trafficbus-release.iml" filepath="$PROJECT_DIR$/trafficbus-release/trafficbus-release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/culturalevents-release/culturalevents-release.iml" filepath="$PROJECT_DIR$/culturalevents-release/culturalevents-release.iml" />
       <module fileurl="file://$PROJECT_DIR$/trafficsubway-release/trafficsubway-release.iml" filepath="$PROJECT_DIR$/trafficsubway-release/trafficsubway-release.iml" />
     </modules>
   </component>
