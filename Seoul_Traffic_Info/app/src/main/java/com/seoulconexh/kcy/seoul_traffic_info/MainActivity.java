@@ -6,6 +6,7 @@ import android.os.Bundle;
 import java.net.URI;
 import kr.go.seoul.airquality.AirQualityTypeMini;
 import kr.go.seoul.culturalevents.CulturalEventButtonTypeA;
+import kr.go.seoul.culturalevents.CulturalEventTypeMini;
 import kr.go.seoul.trafficsubway.TrafficSubwayButtonTypeB;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TrafficSubwayButtonTypeB subwayButtonTypeB;
     private CulturalEventButtonTypeA typeA;
+    private CulturalEventTypeMini typeMinis;
     private AirQualityTypeMini typeMini;
 
     @Override
@@ -27,9 +29,11 @@ public class MainActivity extends AppCompatActivity {
         typeMini = (AirQualityTypeMini) findViewById(R.id.type_mini);
         subwayButtonTypeB = (TrafficSubwayButtonTypeB) findViewById(R.id.subway_type_b);
         typeA = (CulturalEventButtonTypeA) findViewById(R.id.type_a);
+        typeMinis = (CulturalEventTypeMini) findViewById(R.id.type_minis);
 
 
         typeMini.setOpenAPIKey(key);
+        typeMinis.setOpenAPIKey(key);
         typeA.setOpenAPIKey(key);
         subwayButtonTypeB.setOpenAPIKey(key);
         subwayButtonTypeB.setsubwayLocationAPIKey(subwayKey); // 실시간 도착

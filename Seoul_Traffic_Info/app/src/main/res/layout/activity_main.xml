@@ -9,8 +9,17 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="150dp"
         android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/top"
+        android:layout_weight="30"
         >
 
         <kr.go.seoul.trafficsubway.TrafficSubwayButtonTypeB
@@ -29,11 +38,29 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="40"
+        >
+
+    <kr.go.seoul.culturalevents.CulturalEventTypeMini
+        android:id="@+id/type_minis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
+
+    </LinearLayout>
     <kr.go.seoul.airquality.AirQualityTypeMini
         android:id="@+id/type_mini"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+
         />
 
 </RelativeLayout>
